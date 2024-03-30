@@ -10,10 +10,10 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 #mt5.initialize()
 
 # Source channel ID
-source_channel_id = -1001812964237
-destination_channel_id = -1001705504580
+source_channel_id = # your source channel id
+destination_channel_id = # your destination channel id
 
-# Define a function to handle incoming messages
+# Define a function to handle incoming messages (THIS BOT TEST FOR AUDCAD & XAUUSD only
 def forward_message(update, context):
     message = update.effective_message
     #order = message.text
@@ -55,7 +55,7 @@ def forward_message(update, context):
 
 
 # Create an instance of the Updater and pass in your bot's API token
-updater = Updater(token='5752556312:AAEdr9u7OA5jTPfhTAv561_KGwYhYHDiHuo', use_context=True)
+updater = Updater(token='YOUR BOT API TOKEN HERE', use_context=True)
 
 # Get the dispatcher to register handlers
 dispatcher = updater.dispatcher
